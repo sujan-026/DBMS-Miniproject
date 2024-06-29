@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<div class="flex flex-col min-h-screen">
+    <header class="bg-gray-900 text-white py-4 px-6 md:px-8 lg:px-10">
+        <div class="container mx-auto flex items-center justify-between">
+            <a class="text-xl font-bold" href="#">
+                Global Trade Analytics
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a class="hover:text-gray-300" href="#">
+                    Home
+                </a>
+                <a class="hover:text-gray-300" href="#">
+                    Trade Data
+                </a>
+                <a class="hover:text-gray-300" href="#">
+                    Reports
+                </a>
+                <a class="hover:text-gray-300" href="#">
+                    Dashboard
+                </a>
+                <a class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md" href="#">
+                    Login
+                </a>
+            </nav>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class="bg-gray-900 text-white py-20 px-6 md:px-8 lg:px-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <h1 class="text-4xl font-bold">Unlock the Power of Global Trade</h1>
+                <p class="text-lg">
+                    Our comprehensive platform provides unparalleled insights into the global trade landscape,
+                    empowering you
+                    to make informed decisions and drive business growth.
+                </p>
+                <div class="flex space-x-4">
+                    <a class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-md" href="#">
+                        Explore Trade Data
+                    </a>
+                    <a class="border border-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-md" href="#">
+                        Generate Reports
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="/placeholder.svg" alt="Global Trade" width="600" height="400" class="rounded-lg"
+                     style="aspect-ratio: 600 / 400; object-fit: cover;" />
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-20 px-6 md:px-8 lg:px-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-8 w-8 text-blue-500">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold">Comprehensive Search</h3>
+                    <p>Easily search and filter through vast amounts of global trade data to find the insights you
+                        need.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-8 w-8 text-blue-500">
+                        <line x1="12" x2="12" y1="20" y2="10"></line>
+                        <line x1="18" x2="18" y1="20" y2="4"></line>
+                        <line x1="6" x2="6" y1="20" y2="16"></line>
+                    </svg>
+                    <h3 class="text-xl font-bold">Powerful Analytics</h3>
+                    <p>
+                        Leverage our advanced data visualization tools to uncover trends, patterns, and
+                        opportunities in the
+                        global trade landscape.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-8 w-8 text-blue-500">
+                        <path d="M12 2v10"></path>
+                        <path d="M18.4 6.6a9 9 0 1 1-12.77.04"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold">Customizable Reports</h3>
+                    <p>Create custom reports tailored to your specific needs, and save them for easy access and
+                        sharing.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-8 w-8 text-blue-500">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <h3 class="text-xl font-bold">User Management</h3>
+                    <p>
+                        Manage user accounts, permissions, and preferences to ensure secure and personalized access
+                        to the
+                        platform.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-8 w-8 text-blue-500">
+                        <path
+                                d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
+                        </path>
+                        <path d="M15 5.764v15"></path>
+                        <path d="M9 3.236v15"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold">Geospatial Insights</h3>
+                    <p>
+                        Visualize trade data on interactive maps to gain a deeper understanding of global trade
+                        patterns and
+                        relationships.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-8 w-8 text-blue-500">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" x2="12" y1="3" y2="15"></line>
+                    </svg>
+                    <h3 class="text-xl font-bold">Data Management</h3>
+                    <p>
+                        Easily upload, manage, and maintain your own trade data within the platform for a
+                        comprehensive view of
+                        your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-20 px-6 md:px-8 lg:px-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Explore Trade Data</h2>
+            <div class="bg-gray-100 rounded-lg p-6 space-y-6">
+                <div class="flex items-center space-x-4">
+                    <input
+                            class="flex h-10 w-full bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1 rounded-md px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Search trade data..." type="text" />
+                </div>
+                <div class="overflow-x-auto">
+                    <div class="relative w-full overflow-auto">
+                        <table class="w-full caption-bottom text-sm">
+                            <thead class="[&amp;_tr]:border-b">
+                                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                                    <th
+                                            class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                        Country
+                                    </th>
+                                    <th
+                                            class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                        Product
+                                    </th>
+                                    <th
+                                            class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                        Trade Value
+                                    </th>
+                                    <th
+                                            class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                        Trade Volume
+                                    </th>
+                                    <th
+                                            class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="[&amp;_tr:last-child]:border-0">
+                            <% const maxLength = Math.max(countryMsg.length, productMsg.length); for (let i = 0; i < maxLength; i++) {%>
+                                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                                     <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"> <%= countryMsg[i] ? countryMsg[i].name : '' %> </td>
+                                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"> <%= productMsg[i] ? productMsg[i].name : '' %> </td>
+                                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">$50,000,000</td>
+                                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">100,000 units
+                                    </td>
+                                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"></td>
+                                </tr>
+                            <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <nav aria-label="pagination" class="mx-auto flex w-full justify-center" role="navigation"></nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-20 px-6 md:px-8 lg:px-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Generate Reports</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
+                <div class="flex items-center space-x-4">
+                    <input
+                            class="flex h-10 w-full bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1 rounded-md px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Search reports..." type="text" />
+                    <button
+                            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 rounded-md">
+                        Create Report
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <div class="relative w-full overflow-auto">
+                        <table class="w-full caption-bottom text-sm">
+                            <thead class="[&amp;_tr]:border-b">
+                            <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                                <th
+                                        class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                    Report Name
+                                </th>
+                                <th
+                                        class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                    Created At
+                                </th>
+                                <th
+                                        class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                    Actions
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="[&amp;_tr:last-child]:border-0">
+                            <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Global Trade
+                                    Trends 2022</td>
+                                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2022-05-15</td>
+                                <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-20 px-6 md:px-8 lg:px-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Dashboard</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Trade
+                            Overview</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="aspect-[9/4]">
+                            <div style="width: 100%; height: 100%;">
+                                <div style="position: relative;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="251.65625" height="111.84375" role="application">
+                                        <rect width="251.65625" height="111.84375" fill="transparent"></rect>
+                                        <g transform="translate(40,10)">
+                                            <g>
+                                                <line opacity="1" x1="0" x2="0" y1="0" y2="61.84375" stroke="#f3f4f6" stroke-width="1"></line>
+                                                <line opacity="1" x1="40.33125" x2="40.33125" y1="0" y2="61.84375" stroke="#f3f4f6"
+                                                      stroke-width="1"></line>
+                                                <line opacity="1" x1="80.6625" x2="80.6625" y1="0" y2="61.84375" stroke="#f3f4f6"
+                                                      stroke-width="1"></line>
+                                                <line opacity="1" x1="120.99374999999999" x2="120.99374999999999" y1="0" y2="61.84375"
+                                                      stroke="#f3f4f6" stroke-width="1"></line>
+                                                <line opacity="1" x1="161.325" x2="161.325" y1="0" y2="61.84375" stroke="#f3f4f6"
+                                                      stroke-width="1"></line>
+                                                <line opacity="1" x1="201.65625" x2="201.65625" y1="0" y2="61.84375" stroke="#f3f4f6"
+                                                      stroke-width="1"></line>
+                                            </g>
+                                            <g>
+                                                <line opacity="1" x1="0" x2="201.65625" y1="62" y2="62" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="201.65625" y1="47" y2="47" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="201.65625" y1="32" y2="32" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="201.65625" y1="16" y2="16" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="201.65625" y1="1" y2="1" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                            </g>
+                                            <g transform="translate(0,61.84375)">
+                                                <g transform="translate(0,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Jan
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(40.33125,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Feb
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(80.6625,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Mar
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(120.99374999999999,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Apr
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(161.325,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        May
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(201.65625,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Jun
+                                                    </text>
+                                                </g>
+                                                <line x1="0" x2="201.65625" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;">
+                                                </line>
+                                            </g>
+                                            <g transform="translate(0,0)">
+                                                <g transform="translate(0,62)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        0
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,47)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        50
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,32)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        100
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,16)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        150
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,1)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        200
+                                                    </text>
+                                                </g>
+                                                <line x1="0" x2="0" y1="0" y2="61.84375" style="stroke: transparent; stroke-width: 1;"></line>
+                                            </g>
+                                            <path d="M0,44L40.331,47L80.663,8L120.994,38L161.325,33L201.656,0" fill="none" stroke-width="2"
+                                                  stroke="#e11d48"></path>
+                                            <path d="M0,49L40.331,20L80.663,43L120.994,18L161.325,54L201.656,15" fill="none"
+                                                  stroke-width="2" stroke="#2563eb"></path>
+                                            <g>
+                                                <g transform="translate(201.65625, 0)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#e11d48" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(161.325, 33)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#e11d48" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(120.99374999999999, 38)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#e11d48" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(80.6625, 8)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#e11d48" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(40.33125, 47)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#e11d48" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(0, 44)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#e11d48" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(201.65625, 15)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#2563eb" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(161.325, 54)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#2563eb" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(120.99374999999999, 18)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#2563eb" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(80.6625, 43)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#2563eb" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(40.33125, 20)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#2563eb" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                                <g transform="translate(0, 49)" style="pointer-events: none;">
+                                                    <circle r="3" fill="#2563eb" stroke="transparent" stroke-width="0"
+                                                            style="pointer-events: none;"></circle>
+                                                </g>
+                                            </g>
+                                            <g transform="translate(0,0)">
+                                                <rect data-ref="mesh-interceptor" width="201.65625" height="61.84375" fill="red" opacity="0"
+                                                      style="cursor: auto;">
+                                                </rect>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                            Top Traded Products
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="aspect-[9/4]">
+                            <div style="width: 100%; height: 100%;">
+                                <div style="position: relative;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="251.671875" height="111.84375" role="application"
+                                         aria-label="A bar chart showing data" focusable="false">
+                                        <rect width="251.671875" height="111.84375" fill="transparent"></rect>
+                                        <g transform="translate(40,0)">
+                                            <g>
+                                                <line opacity="1" x1="0" x2="211.671875" y1="72" y2="72" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="211.671875" y1="49" y2="49" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="211.671875" y1="26" y2="26" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                                <line opacity="1" x1="0" x2="211.671875" y1="3" y2="3" stroke="#f3f4f6" stroke-width="1">
+                                                </line>
+                                            </g>
+                                            <g transform="translate(0,71.84375)">
+                                                <g transform="translate(24,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Jan
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(57,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Feb
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(90,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Mar
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(123,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Apr
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(156,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        May
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(189,0)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="text-before-edge" text-anchor="middle"
+                                                          transform="translate(0,16) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        Jun
+                                                    </text>
+                                                </g>
+                                                <line x1="0" x2="211.671875" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;">
+                                                </line>
+                                            </g>
+                                            <g transform="translate(0,0)">
+                                                <g transform="translate(0,72)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        0
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,49)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        50
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,26)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        100
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(0,3)" style="opacity: 1;">
+                                                    <line x1="0" x2="0" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;">
+                                                    </line>
+                                                    <text dominant-baseline="central" text-anchor="end" transform="translate(-16,0) rotate(0)"
+                                                          style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">
+                                                        150
+                                                    </text>
+                                                </g>
+                                                <line x1="0" x2="0" y1="0" y2="71.84375" style="stroke: transparent; stroke-width: 1;"></line>
+                                            </g>
+                                            <g transform="translate(12, 21)">
+                                                <rect width="23" height="51" rx="0" ry="0" fill="#2563eb" stroke-width="0" stroke="#2563eb"
+                                                      focusable="false"></rect>
+                                            </g>
+                                            <g transform="translate(45, 0)">
+                                                <rect width="23" height="72" rx="0" ry="0" fill="#2563eb" stroke-width="0" stroke="#2563eb"
+                                                      focusable="false"></rect>
+                                            </g>
+                                            <g transform="translate(78, 13)">
+                                                <rect width="23" height="59" rx="0" ry="0" fill="#2563eb" stroke-width="0" stroke="#2563eb"
+                                                      focusable="false"></rect>
+                                            </g>
+                                            <g transform="translate(111, 3)">
+                                                <rect width="23" height="69" rx="0" ry="0" fill="#2563eb" stroke-width="0" stroke="#2563eb"
+                                                      focusable="false"></rect>
+                                            </g>
+                                            <g transform="translate(144, 17)">
+                                                <rect width="23" height="55" rx="0" ry="0" fill="#2563eb" stroke-width="0" stroke="#2563eb"
+                                                      focusable="false"></rect>
+                                            </g>
+                                            <g transform="translate(177, 39)">
+                                                <rect width="23" height="33" rx="0" ry="0" fill="#2563eb" stroke-width="0" stroke="#2563eb"
+                                                      focusable="false"></rect>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                            Trade Partner Concentration
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="aspect-[9/4]">
+                            <div style="width: 100%; height: 100%;">
+                                <div style="position: relative;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="251.65625" height="111.84375" role="application">
+                                        <rect width="251.65625" height="111.84375" fill="transparent"></rect>
+                                        <g transform="translate(10,10)">
+                                            <g transform="translate(115.828125,45.921875)">
+                                                <path d="M-45.918,-0.586A45.922,45.922,0,0,1,-26.42,-37.561L0,0Z" opacity="1" fill="#2563eb"
+                                                      stroke="#ffffff" stroke-width="1">
+                                                </path>
+                                                <path d="M0,-45.922A45.922,45.922,0,0,1,44.669,-10.654L0,0Z" opacity="1" fill="#2563eb"
+                                                      stroke="#ffffff" stroke-width="1">
+                                                </path>
+                                                <path d="M23.13,39.671A45.922,45.922,0,0,1,-24.797,38.651L0,0Z" opacity="1" fill="#2563eb"
+                                                      stroke="#ffffff" stroke-width="1">
+                                                </path>
+                                                <path d="M44.669,-10.654A45.922,45.922,0,0,1,23.13,39.671L0,0Z" opacity="1" fill="#2563eb"
+                                                      stroke="#ffffff" stroke-width="1">
+                                                </path>
+                                                <path d="M-24.797,38.651A45.922,45.922,0,0,1,-45.918,-0.586L0,0Z" opacity="1" fill="#2563eb"
+                                                      stroke="#ffffff" stroke-width="1">
+                                                </path>
+                                                <path d="M-26.42,-37.561A45.922,45.922,0,0,1,0,-45.922L0,0Z" opacity="1" fill="#2563eb"
+                                                      stroke="#ffffff" stroke-width="1">
+                                                </path>
+                                            </g>
+                                            <g transform="translate(115.828125,45.921875)">
+                                                <g transform="translate(-26.402865705750624,-13.923524787547489)" opacity="1"
+                                                   style="pointer-events: none;">
+                                                    <text text-anchor="middle" dominant-baseline="central"
+                                                          style="font-family: sans-serif; font-size: 18px; fill: rgb(255, 255, 255); outline-width: 0px; outline-color: transparent;">
+                                                        111
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(18.496928213869033,-23.427323932458172)" opacity="1"
+                                                   style="pointer-events: none;">
+                                                    <text text-anchor="middle" dominant-baseline="central"
+                                                          style="font-family: sans-serif; font-size: 18px; fill: rgb(255, 255, 255); outline-width: 0px; outline-color: transparent;">
+                                                        157
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(-0.6352778190194744,29.842457708406215)" opacity="1"
+                                                   style="pointer-events: none;">
+                                                    <text text-anchor="middle" dominant-baseline="central"
+                                                          style="font-family: sans-serif; font-size: 18px; fill: rgb(255, 255, 255); outline-width: 0px; outline-color: transparent;">
+                                                        129
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(27.44147497734611,11.744841891359748)" opacity="1"
+                                                   style="pointer-events: none;">
+                                                    <text text-anchor="middle" dominant-baseline="central"
+                                                          style="font-family: sans-serif; font-size: 18px; fill: rgb(255, 255, 255); outline-width: 0px; outline-color: transparent;">
+                                                        150
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(-26.283368117787635,14.147806203444267)" opacity="1"
+                                                   style="pointer-events: none;">
+                                                    <text text-anchor="middle" dominant-baseline="central"
+                                                          style="font-family: sans-serif; font-size: 18px; fill: rgb(255, 255, 255); outline-width: 0px; outline-color: transparent;">
+                                                        119
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(-9.006124148848839,-28.458137461908386)" opacity="1"
+                                                   style="pointer-events: none;">
+                                                    <text text-anchor="middle" dominant-baseline="central"
+                                                          style="font-family: sans-serif; font-size: 18px; fill: rgb(255, 255, 255); outline-width: 0px; outline-color: transparent;">
+                                                        72
+                                                    </text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Data Upload
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="h-8 w-8 text-blue-500">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" x2="12" y1="3" y2="15"></line>
+                            </svg>
+                            <p>Drag and drop your trade data files here or click to upload.</p>
+                            <button
+                                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 rounded-md">
+                                Upload Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Platform
+                            Settings</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-2">
+                                <button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"></button>
+                                <span>Dark Mode</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"></button>
+                                <span>Email Notifications</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"></button>
+                                <span>Data Export Options</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">User
+                            Profile</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                    <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+                  </span>
+                                <div>
+                                    <h3 class="text-lg font-bold">John Doe</h3>
+                                    <p class="text-gray-500">john.doe@example.com</p>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">
+                                    Name
+                                </label>
+                                <input
+                                        class="flex h-10 w-full bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-md px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        id="name" type="text" value="John Doe" />
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu-2');
+
+            menuToggle.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+
+                const svgIcons = menuToggle.querySelectorAll('svg');
+                svgIcons.forEach(svg => svg.classList.toggle('hidden'));
+            });
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 10) {
+                    document.querySelector('nav').classList.add('active');
+                } else {
+                    document.querySelector('nav').classList.remove('active');
+                }
+            });
+        });
+
+        module.exports = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-gray': 'rgb(243 244 246)',
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</div>
+</body>
+
+</html>

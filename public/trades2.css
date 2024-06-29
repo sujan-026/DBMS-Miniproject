@@ -1,93 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    color:#fff;
+    color: #fff;
 }
 
 
-body{
+body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to bottom,black,rgb(30 30 89));
+    background: linear-gradient(to bottom, black, rgb(30 30 89));
 }
 
 a {
     text-decoration: none;
     color: whitesmoke;
-  }
+}
 
-  a:hover{
-color: #6c63ff;
-transition: 0.3s;
-  }
+a:hover {
+    color: #6c63ff;
+    transition: 0.3s;
+}
 
-  .nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: 18px;
-    
-  }
-  ul li {
+
+}
+
+ul li {
     list-style: none;
     padding: 0;
-    margin: 25px  25px 0px 0px ;
-  }
+    margin: 25px 25px 0px 0px;
+}
 
-.header{
-   padding: 5px;
+.header {
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media (max-width:610px){
 
-    .header{
+@media (max-width:610px) {
+
+    .header {
         font-size: 12px;
     }
-
-    
-
-}
-@media (max-width:910px){
-.countries{
-    padding: 20px;
-}
 }
 
-.countries{
+@media (max-width:910px) {
+    .countries {
+        padding: 20px;
+    }
+}
+
+.countries {
     /* position: relative; */
     margin: auto;
     padding: 40px;
-    width:90vw;
+    width: 90vw;
     height: 100%;
     /* align-items: center; */
     justify-content: space-between;
     display: flex;
-    flex-direction:column-reverse;
-    overflow:initial;
+    flex-direction: column-reverse;
+    overflow: initial;
 }
 
 
-.details{
+.details {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
- 
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.name{
+.name {
     font-size: 25px;
     display: inline;
 }
 
-.country{
+.country {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -95,11 +94,11 @@ li{
     margin: 10px;
 }
 
-.country img{
+.country img {
     height: 70px;
 }
 
-.hidden{
+.hidden {
     width: 100%;
     display: flex;
     gap: 20px;
@@ -110,31 +109,26 @@ li{
     /* position:absolute;  */
     /* left: -100%; */
     /* display: none; */
-    
+
 }
 
-.hidden1{
-    display: flex;   
+.hidden1 {
+    display: flex;
     gap: 20px;
 }
 
-.import-details,.export-details,.graphs{
-
+.import-details,
+.export-details,
+.graphs {
     background-color: #484d7d48;
-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     padding: 5px;
     border-radius: 20px;
-
 }
-
-
-
-
-.title{
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 3px;
 }
-
-
