@@ -1,0 +1,339 @@
+*{
+    padding: 0px;
+    margin:0px;
+    color: white;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.main-container{
+    margin:0px;
+    padding: 0px;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:  #8b8886;
+
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    color: #6c63ff;
+    transition: 0.3s;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.landing-page{
+    background: linear-gradient(to bottom,black,rgb(30 30 89));
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+.landing-page header {
+    min-height: 80px;
+    display: flex;
+
+}
+
+
+@media (max-width: 767px) {
+    .landing-page header {
+        min-height: auto;
+        display: initial;
+    }
+}
+.landing-page header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .landing-page header .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.landing-page header .logo {
+    /* color: #bbbbbb; */
+    color: white;
+    /* font-style: italic; */
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.logo1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.landing-page header .logoimg{
+    height: 40px;
+}
+
+
+@media (max-width: 767px) {
+    .landing-page header .logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.landing-page header .links {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .landing-page header .links {
+        text-align: center;
+        gap: 10px;
+    }
+}
+.landing-page header .links li {
+    margin-left: 30px;
+    /* color: #5d5d5d; */
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .3s;
+}
+@media (max-width: 767px) {
+    .landing-page header .links li {
+        margin-left: auto;
+    }
+}
+.landing-page header .links li:last-child {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    /* background-color: #6c63ff; */
+    background-color: #2921b7;
+}
+.landing-page header .links li:not(:last-child):hover {
+    color: #6c63ff;
+}
+.landing-page .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+    .landing-page .content .container {
+        gap: 0;
+        min-height: calc(100vh - 101px);
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 767px) {
+    .landing-page .content .info {
+        text-align: center;
+        margin-bottom: 15px
+    }
+}
+.landing-page .content .info h1 {
+    /* color: #bbbbbb; */
+    font-size: 44px;
+}
+.landing-page .content .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 20px;
+    /* color: #b3b3b3; */
+}
+.landing-page .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 20px;
+    background-color: #2921b7;
+    /* background-color: #6c63ff; */
+}
+.landing-page .content .image img {
+    max-width: 100%;
+}
+/* End Landing Page */
+
+.main-image{
+    /* mix-blend-mode:exclusion */
+    width: 600px;
+    height: 400px;
+}
+h1,p{
+    color:white;
+}
+
+
+
+.top-countries{
+    display: flex;
+    padding:  45px  0px ;
+    margin-top: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom,black,rgb(30 30 89));
+}
+
+.goods-categories{
+    padding:  45px  0px ;
+    margin-top: 4px;
+    background: linear-gradient(to bottom,rgb(30 30 89),black);
+    /* background-color: rgb(105, 208, 193); */
+}
+
+.goods-categoriespart1 p{
+    font-size: 16px;
+}
+
+.goods-categoriespart1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    padding: 30px;
+    gap: 30px;
+}
+
+
+
+.product{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 240px;
+    font-size: 20px;
+    padding: 18px;
+    align-items: center;
+    justify-content: center;
+    /* background:linear-gradient(to bottom,rgb(95, 95, 207),rgb(105, 208, 193));  */
+    /* border: 2px solid rgb(71, 68, 68);*/
+}
+
+.productimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productimg img{
+    height: 110px;
+}
+
+#about-us{
+    padding:  45px  0px ;
+    margin-top: 4px;
+    background: linear-gradient(to bottom,black,rgb(30 30 89));
+}
+
+@media (max-width: 830px) {
+    .category img{
+        height: 90px;
+    }
+    .category{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product{
+        width: 220px;
+    }
+
+    .category h4{
+        font-size: 12px;
+    }
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: white;
+    background-color: #2921b7; /* Adjust this color if needed */
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 12px;
+    border: 1px solid #bbb;
+}
+
+.custom-table th {
+    background-color: #444;
+    font-weight: 600;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
