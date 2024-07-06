@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBA Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Global Trade Management Dashboard </h1>
+
+
+
+    
+    <!-- Form to add a new country -->
+    <div class="form-container">
+      <h2>Add Country</h2>
+      <form id="addCountryForm">
+        <input type="text" id="countryName" placeholder="Country Name" required>
+        <input type="url" id="countryFlag" placeholder="Country Flag URL" required>
+        <button type="submit">Add Country</button>
+      </form>
+    </div>    
+    <!-- Table to display list of countries -->
+    <div class="table-container">
+      <h2>Country List</h2>
+      <table id="countryTable">
+        <thead>
+          <tr>
+            <th>Country Name</th>
+            <th>Flag</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="countryTableBody">
+          <!-- Countries will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Form to add a new product -->
+    <div class="form-container">
+      <h2>Add Product</h2>
+      <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+    
+    <!-- Table to display list of products -->
+    <div class="table-container">
+      <h2>Product List</h2>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="productTableBody">
+          <!-- Products will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Form to add import and export amounts -->
+    <div class="form-container">
+      <h2>Add Import/Export Amount</h2>
+      <form id="addAmountForm">
+        <input type="text" id="amountCountry" placeholder="Country Name" required>
+        <input type="text" id="importAmount" placeholder="Import Amount" required>
+        <input type="text" id="exportAmount" placeholder="Export Amount" required>
+        <button type="submit">Add Amount</button>
+      </form>
+    </div>
+      <!-- Form to update country -->
+      <div class="form-container">
+        <h2>Update Country</h2>
+        <form id="addCountryForm">
+          <input type="text" id="countryName" placeholder="Exsisting Country Name" required>
+          <input type="text" id="countryName" placeholder="New Country Name" required>
+          <input type="url" id="countryFlag" placeholder="Country Flag URL" required>
+          <button type="submit">Add Country</button>
+        </form>
+      </div> 
+
+ <!-- Update a new product -->
+ <div class="form-container">
+  <h2>Update Product of country</h2>
+  <form id="addProductForm">
+    <input type="text" id="countryName" placeholder="Country Name" required>
+    <input type="text" id="productName" placeholder="Product Name" required>
+    <button type="submit">Add Product</button>
+  </form>
+</div>
+
+  <!-- Update import and export amounts -->
+  <div class="form-container">
+    <h2>Update Import/Export Amount</h2>
+    <form id="addAmountForm">
+      <input type="text" id="amountCountry" placeholder="Country Name" required>
+      <input type="text" id="importAmount" placeholder="Import Amount" required>
+      <input type="text" id="exportAmount" placeholder="Export Amount" required>
+      <button type="submit">Add Amount</button>
+    </form>
+  </div>
+  </div>
+
+   
+
+    
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
