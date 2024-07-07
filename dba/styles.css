@@ -10,6 +10,21 @@ html{
   padding: 20px;
 }
 
+.separator{
+  background-color: white;
+  height: 5px;
+  width: 100%;
+}
+
+.heading{
+  margin-top: 15px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
 thead{
   border: black;
 }
@@ -45,6 +60,14 @@ thead{
   padding: 10px;
 }
 
+.chkboxProduct{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap: 5px;
+
+
+}
 form {
   /* background-color: #fefefe; */
   /* margin: 5% auto; */
@@ -74,8 +97,28 @@ form {
   width: 235px;
 }
 
-.modal button:hover {
+.form-container button:hover {
   opacity: 0.8;
+}
+
+
+
+table {
+  background-color: rgb(73, 33, 33);
+  border-collapse: collapse; /* Collapse border spacing */
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Optional: Adds space below the table */
+}
+
+th, td,thead {
+ 
+  border: 1px solid ; /* Border for each cell */
+  padding: 8px; /* Padding inside each cell */
+  text-align: left; /* Align text to the left */
+}
+
+th {
+  background-color: rgb(73, 33, 33); /* Background color for header cells */
 }
 
 

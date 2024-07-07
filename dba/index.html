@@ -12,13 +12,14 @@
 
 
 
-    
+    <div class="heading">Add And Delete Details</div>
     <!-- Form to add a new country -->
     <div class="form-container">
       <h2>Add Country</h2>
       <form id="addCountryForm">
         <input type="text" id="countryName" placeholder="Country Name" required>
         <input type="url" id="countryFlag" placeholder="Country Flag URL" required>
+        <input type="text" id="countryIsocode" placeholder="Country Iso Code" required>
         <button type="submit">Add Country</button>
       </form>
     </div>    
@@ -30,6 +31,7 @@
           <tr>
             <th>Country Name</th>
             <th>Flag</th>
+            <th>Iso Code</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -43,7 +45,14 @@
     <div class="form-container">
       <h2>Add Product</h2>
       <form id="addProductForm">
+        <div class="chkboxProduct">
+
+          <input type="radio" name="trade" id="importId">Import 
+
+          <input type="radio" name="trade" id="exportId">Export
+        </div>
         <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="text" id="productType" placeholder="Category" required>
         <button type="submit">Add Product</button>
       </form>
     </div>
@@ -55,6 +64,8 @@
         <thead>
           <tr>
             <th>Product Name</th>
+            <th>Product Category</th>
+            <th>Trade Type</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -74,12 +85,16 @@
         <button type="submit">Add Amount</button>
       </form>
     </div>
+    <div class="separator"></div>
+
+    <div class="heading">Update Details</div>
       <!-- Form to update country -->
       <div class="form-container">
         <h2>Update Country</h2>
         <form id="addCountryForm">
-          <input type="text" id="countryName" placeholder="Exsisting Country Name" required>
+          <input type="text" id="ExistcountryName" placeholder="Exsisting Country Name" required>
           <input type="text" id="countryName" placeholder="New Country Name" required>
+          <input type="text" id="Newiscocode" placeholder="New Iso Code" required>
           <input type="url" id="countryFlag" placeholder="Country Flag URL" required>
           <button type="submit">Add Country</button>
         </form>
@@ -89,6 +104,11 @@
  <div class="form-container">
   <h2>Update Product of country</h2>
   <form id="addProductForm">
+    <div class="chkboxProduct">
+
+      <input type="radio" name="trade" id="importId">Import
+      <input type="radio" name="trade" id="exportId">Export
+    </div>
     <input type="text" id="countryName" placeholder="Country Name" required>
     <input type="text" id="productName" placeholder="Product Name" required>
     <button type="submit">Add Product</button>
